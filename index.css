@@ -1,0 +1,148 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+* {
+    box-sizing: border-box
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.clearfix > button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.fix > button {
+  background-color: #5d54a3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.222);
+}
+
+.fix{
+  margin-top: 100px;
+
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.sinupbtn {
+  float: left;
+  width: 80%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  margin-top: 50px;
+
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+} 
+
+.text{
+    text-align: left;
+    margin-top: 300px;
+    padding-left: 160px;
+    padding-right: 160px;
+    color: white;
+    width: 700px;
+}
+form{
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.222);
+    margin-bottom: 10px;
+}
+
+#content{
+    background-image: url("bg-intro-desktop.png");
+    background-color: #ff7978;
+}
+@media screen and (max-width: 750px){
+    .text{
+
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        width: auto;
+    }
+    body{
+        font-size: 16px; 
+    }
+    .fix {
+        width: 100%;
+        display: flex;
+    justify-content: center;
+    }
+    .fix > button{
+        padding: 30px;
+
+    }
+    form{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    #content{
+    background-image: url("bg-intro-mobile.png");
+    background-color: #ff7978;
+}
+}
